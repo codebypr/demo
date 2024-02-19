@@ -22,7 +22,7 @@ function App() {
     client.setEndpoint('https://cloud.appwrite.io/v1').setProject('65d04ecb366dcd6e13af');
     const database=new Databases(client);
     let data=database.listDocuments('65d04ff6c49e72c2e1f9','101');
-    await  data.then  ((res)=>setArr(res.documents)).catch((err)=>console.log(err,'Err'))
+    await  data.then  ((res)=>{setArr(res.documents);console.log("Done",res);}).catch((err)=>console.log(err,'Err'))
   }
   return (
     <>
