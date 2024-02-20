@@ -26,7 +26,12 @@ function App() {
   }
   return (
     <>
+<<<<<<< HEAD
        <div style={{display:'flex'}}> 
+=======
+       <h3>My Backend App</h3>
+       <div style={{display:'flex', backgroundColor:'goldenrod'}}> 
+>>>>>>> 136a563 (Home)
        <div style={{padding:'4px' ,border:'1px solid black'}}>
           Username: <input type="text" style={{marginBottom:'4px'}}
           value={uname}
